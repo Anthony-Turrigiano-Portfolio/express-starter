@@ -3,11 +3,14 @@
  * @description home controller
  */
 
+//module dependencies
+const path = require('path');
+
 //export module 
 module.exports = {
 
     get: ( req, res ) => {
-        res.send('Home Page');    
+        res.sendFile(path.join(__dirname, "dist/index.html")); 
     }
     
 };
