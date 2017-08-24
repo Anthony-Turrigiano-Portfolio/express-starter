@@ -5,5 +5,6 @@
  
  const express = require( 'express' );
  const homeRoute = require( './home');
- 
- module.exports = homeRoute;
+ const loginRoute = require( './login');
+
+module.exports = [homeRoute, loginRoute];
