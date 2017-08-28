@@ -7,6 +7,7 @@
  const path = require( 'path' );
  const express = require( 'express' );
  const dotenv = require( 'dotenv' );
+ const middleware = require( './middleware' );
  const routes = require( './routes' );
  
  //load local enviornment variables 
@@ -14,6 +15,8 @@
  
  //initialize express
  const app = express();
+ 
+ middleware(app);
  
  //set app variables
  app.set( 'HOST', process.env.HOST );

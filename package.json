@@ -10,9 +10,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "chalk": "^2.1.0",
+    "compression": "^1.7.0",
+    "cors": "^2.8.4",
     "dotenv": "^4.0.0",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "express-status-monitor": "^1.0.0",
+    "express-validator": "^3.2.1",
+    "lusca": "^1.5.1",
+    "morgan": "^1.8.2"
   },
   "devDependencies": {
     "localtunnel": "^1.8.3",
